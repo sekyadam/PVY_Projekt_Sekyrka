@@ -1,7 +1,7 @@
 // velikost mapy
 const SIZE = 20;
 
-// datový model mapy (2D pole)
+//model mapy (2D pole)
 let mapData = [];
 
 // DOM prvky
