@@ -1,22 +1,74 @@
+/* Reset */
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
-    background: #e9e9e9;
+    background: #947878;
     margin: 0;
     padding: 20px;
+    color: #333;
+}
+
+/* Sekce */
+#menu, #editor {
+    max-width: 900px;
+    margin: 30px auto;
+    background: #da8e8e;
+    padding: 25px;
+    border-radius: 8px;
+    border: 1px solid #d0d0d0;
+    text-align: center;
 }
 
 .hidden {
     display: none;
 }
 
-#menu, #editor {
-    text-align: center;
+/* Nadpis */
+h1 {
+    margin-bottom: 20px;
+    color: #222;
 }
 
+/* Tlačítka */
 button {
-    padding: 10px 20px;
-    margin: 10px;
+    padding: 10px 22px;
+    margin: 8px;
     cursor: pointer;
+    border: 1px solid #b3b3b3;
+    border-radius: 5px;
+    background: #e6e6e6;
+    color: #333;
+    font-size: 15px;
+}
+
+button:hover {
+    background: #dcdcdc;
+}
+
+button:active {
+    background: #cfcfcf;
+}
+
+/* Seznam uložených map */
+#savedMaps {
+    margin-top: 15px;
+}
+
+#mapList li {
+    list-style: none;
+    padding: 8px;
+    margin: 5px 0;
+    background: #f2f2f2;
+    border: 1px solid #d0d0d0;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#mapList li:hover {
+    background: #e8e8e8;
 }
 
 /* Grid */
@@ -28,21 +80,23 @@ button {
     grid-template-columns: repeat(20, 1fr);
     grid-template-rows: repeat(20, 1fr);
     border: 2px solid #333;
+    border-radius: 4px;
 }
 
-/* Typy políček */
+/* Buňky */
 .cell {
     border: 1px solid #ccc;
 }
 
+/* Typy políček */
 .grass {
-    background: #7ec850;
+    background: #7fcf6b; /* světlejší tráva */
 }
 
 .road {
-    background: #555;
+    background: #4a4a4a; /* neutrální asfalt */
 }
 
 .water {
-    background: #4da6ff;
+    background: #5aa7ff; /* jemná modrá */
 }
