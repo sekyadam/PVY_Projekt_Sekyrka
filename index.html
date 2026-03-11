@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <title>Car Track Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Hlavní menu -->
+    <section id="menu">
+        <h1>Car Track Builder</h1>
+        <button id="newMapBtn">Nová mapa</button>
+        <button id="loadMapBtn">Načíst mapu</button>
+
+        <div id="savedMaps" class="hidden">
+            <h3>Uložené mapy</h3>
+            <ul id="mapList"></ul>
+        </div>
+    </section>
+
+    <!-- Editor -->
+    <section id="editor" class="hidden">
+        <button id="backBtn">Zpět do menu</button>
+        <button id="saveBtn">Uložit mapu</button>
+
+        <div id="grid"></div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
