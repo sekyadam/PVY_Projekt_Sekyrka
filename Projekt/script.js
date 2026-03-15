@@ -1,10 +1,9 @@
 // velikost mapy
 const SIZE = 20;
 
-//model mapy (2D pole)
+//model mapy
 let mapData = [];
 
-// DOM prvky
 const grid = document.getElementById("grid");
 const menu = document.getElementById("menu");
 const editor = document.getElementById("editor");
@@ -46,17 +45,17 @@ function renderGrid() {
 
 // přepínání typu políčka
 function cycleType(type) {
-    // jednoduché přepínání – pozn.: student-level
+    // prepinani
     if (type === "grass") return "road";
     if (type === "road") return "water";
     return "grass";
 }
 
-// kliknutí na grid (event delegation)
+// kliknutí na grid
 grid.addEventListener("click", (e) => {
     if (!e.target.classList.contains("cell")) return;
 
-    const x = e.target.dataset.x;
+    const x = e.target.dataset.x;           //bunka na kterou jsem klikkl
     const y = e.target.dataset.y;
 
     const current = mapData[y][x];
